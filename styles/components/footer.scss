@@ -1,0 +1,23 @@
+.footer {
+  border-top: 1px solid rgb(80, 80, 80);
+  background-color: rgba($color: #1f1f1f, $alpha: 1);
+  display: flex;
+  width: 100%;
+  height: 60px;
+  justify-content: space-between;
+  padding: 0 10%;
+  align-items: center;
+  h6 {
+    color: rgb(151, 151, 151);
+    font-size: 1rem;
+  }
+  ul {
+    width: 40%;
+    color: rgb(151, 151, 151);
+    display: flex;
+    justify-content: space-evenly;
+    li {
+      cursor: pointer;
+    }
+  }
+}

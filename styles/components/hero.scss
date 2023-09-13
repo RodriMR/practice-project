@@ -1,0 +1,115 @@
+@import "../variables.scss";
+
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-bottom: 3px solid #16151a;
+  align-items: center;
+  height: 120vh;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(25, 34, 70, 1) 49%,
+    rgba(78, 39, 21, 1) 100%
+  );
+  color: $white;
+  overflow: hidden;
+  -webkit-box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.75);
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    text-align: center;
+    gap: 1.5rem;
+    margin: 6rem 0 3rem 0;
+  }
+  &__intro {
+    letter-spacing: 10px;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+    color: $white;
+    margin-bottom: 1rem;
+  }
+  &__text {
+    font-size: 1rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: $white;
+  }
+
+  &__input-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+    form {
+      background-color: $gray;
+      display: flex;
+      width: 100%;
+      border-radius: 5px;
+      padding: 10px;
+      justify-content: space-between;
+      input {
+        background: none;
+        outline: none;
+        border: none;
+        color: $white;
+      }
+      ::placeholder {
+        color: $white;
+        letter-spacing: 1px;
+      }
+      button {
+        color: $white;
+        background-color: $primary-blue;
+        padding: 15px 25px;
+        border-radius: 5px;
+        border: none;
+        font-size: 1rem;
+        font-weight: 400;
+        cursor: pointer;
+      }
+    }
+  }
+
+  &__image-container {
+    width: 80%;
+    max-width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -10%;
+
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+  &__image-container ::after {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(0, 0, 0, 1) 100%
+    );
+  }
+}

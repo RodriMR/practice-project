@@ -1,0 +1,48 @@
+@import "../variables.scss";
+
+.spotlight {
+  background-color: rgba($color: #1f1f1f, $alpha: 1);
+  border-bottom: 3px solid #16151a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  &__container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+  &__image-section {
+    border-radius: 20px;
+    overflow: hidden;
+    width: 70%;
+    max-width: 800px;
+    position: relative;
+    margin: 0 auto;
+    &-bg {
+      height: 100%;
+      object-fit: cover;
+    }
+    &-gif {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 70%;
+      transform: translate(-50%, -50%);
+      border-radius: 20px;
+    }
+  }
+}

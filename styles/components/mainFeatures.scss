@@ -1,0 +1,46 @@
+@import "../variables.scss";
+
+.mainFeatures {
+  background-color: $gray;
+  border-bottom: 3px solid #16151a;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  -webkit-box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.9);
+  -moz-box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.9);
+  box-shadow: 0px 10px 19px -8px rgba(0, 0, 0, 0.9);
+  &__container {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: $white;
+  }
+  &__title {
+    font-size: 3rem;
+    font-weight: 700;
+  }
+  &__text {
+    font-size: 1.2rem;
+    font-weight: 300;
+    margin-bottom: 3rem;
+  }
+  &__card-section {
+    display: flex;
+    border-radius: 10px;
+    background-color: rgb(48, 48, 48);
+  }
+
+  ul {
+    .ul-row {
+      display: flex;
+    }
+  }
+  &__card {
+    border: 1px solid $gray;
+    padding: 3rem;
+  }
+}

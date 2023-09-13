@@ -1,0 +1,10 @@
+@import "./variables.scss";
+
+.text {
+  &--blue {
+    color: $primary-blue;
+  }
+  &--gray {
+    color: rgb(100, 100, 100);
+  }
+}
